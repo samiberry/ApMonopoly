@@ -34,6 +34,7 @@ public class Board {
         propertyList.add(new Property("Go To Jail", PropertyColor.NONE, 0));
         propertyList.add(new Property("Go, collect $200 as you pass", PropertyColor.NONE, 200));
         propertyList.add(new Property("In Jail", PropertyColor.NONE, 0));
+        
 
         return propertyList;
     }
@@ -74,15 +75,31 @@ public class Board {
     private List<Card> buildChanceCardList() {
         List<Card> chanceCards = new ArrayList<Card>();
         chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Advance to Illinois Avenue, if you pass go collect $200", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Go Back Three Spaces", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Advance token to the nearest railroad and pay the owner twice the rental to which he is otherwise entitled. If railroad is unowned, you may buy it from the bank.", 0));
         chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Get out of jail free", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Go to Jail", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "You have been elected chairman of the board, Pay each player $50", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Advance to St. Charles Place", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Pay poor tax of $15", 0));
+        chanceCards.add(new Card(CardType.CHANCE, PropertyColor.BURNT_RED, "Bank pays you dividend of $50", 0));
         return chanceCards;
     }
 
     private List<Card> buildCommunityCardList() {
         List<Card> communityCards = new ArrayList<Card>();
-        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Advance to go ", 0));
-        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Get out of jail free", 0));
-        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "You inherit $100", 100));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Income Tax Refund, Collect $20", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Grand Opera Opening, collect $50 from every player", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "You inherit $100", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Advance to Go, Collect $200", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Bank Error in your favor, Collect $200", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Get out of jail free card", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Pay hospital $100", 100));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Go to to Jail", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Pay school tax of $150", 150));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "From sale of stock, You get $45", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "Life insurance matures, Collect $100", 0));
+        communityCards.add(new Card(CardType.COMMUNITY_CHEST, PropertyColor.GOLD, "You have won second prize in a beauty contest! Collect $10 ", 0)); 
         return communityCards;
     }
 }
